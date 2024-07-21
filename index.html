@@ -3,618 +3,774 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Вело-сайт</title>
 </head>
 <body>
-                            <!-- Вверх головы (начало)-->
-    <div class="header_top">
-        <div class="header_top_wrap content"> 
-            <div class="header_top_wrap_left">
-                <p>Тел. +7 495-432-7654</p>
-                <p>E-mail: info@boutique.com</p>
-            </div>
-            <div class="header_top_wrap_right"> 
-                <div class="header_top_wrap_right_account">
-                    <a href="#login" title="Войти">Войти</a>
-                    <span>/</span>
-                    <a href="#reg" title="Регистрация">Регистрация</a>
-                </div>
-                <div class="header_top_wrap_right_izb">
-                    <a href="#izb" title="Избранное">Избранное (0)</a>
-                </div>
-            </div>
-        </div>
-    </div>
-                             <!-- Вверх головы (конец)
-                                            Середина головы (начало)-->
-    <div class="header_main content">
-        <div class="header_main_logo">
-            <img src="images/logo7.png" id="logo">
-            <a class="fixed" href="#logo"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-        <div class="header_main_form">
-            <form>
-                 <div class="header_main_search">
-                    <input type="text" placeholder="   Поиск товаров...">
-                    <input type="submit" title="Найти" name=" ">
-                </div>
-            </form>
-        </div>
-         <div class="header_main_market">
-           <span>o</span>
-           <i class="fa-solid fa-cart-shopping"></i>
-         </div>
-    </div>
-                                  <!-- Середина головы (конец)
-                                                Низ головы (начало)-->
-     <div class="header_bottom">
-        <div class="header_bottom_wrap content">
-           <div class="header_bottom_left">
-               <p><i class="fa-solid fa-list"></i> Все категории</p>
-               <div class="header_bottom_left_nav">
-                   <ul>
-                       <li><a href="#">Аксессуары</a></li>
-                       <li><a href="#">Блейзеры</a></li>
-                       <li><a href="#">Рубашки</a></li>
-                       <li><a href="#">Юбки</a></li>
-                       <li><a href="#">Шорты</a></li>
-                       <li><a href="#">Велосипедная шапочки</a></li>
-                       <li><a href="#">Велосипедные перчатки</a></li>
-                       <li><a href="#">Трикотаж для велоспорта</a></li>
-                       <li><a href="#">Велосипедный комплект</a></li>
-                       <li><a href="#">Велосипедные шорты</a></li>
-                       <li><a href="#">Носки</a></li>
-                       <li><a href="#">Комбенизон</a></li>
-                       <li><a href="#">Лосины</a></li>
-                       <li><a href="#">Рашгард</a></li>
-                       <li><a href="#">Топы</a></li> 
-                   </ul>
-               </div>
-           </div>
-           <div class="header_bottom_right">
-               <ul>
-                   <li><a href="#/" class="glav">Главная</a></li>
-                   <li><a href="#">Каталог</a></li>
-                   <li><a href="#">Оплата и доставка</a></li>
-                   <li><a href="#">Faq</a></li>
-                   <li><a href="#">Контакты</a></li>
-               </ul>
-           </div>
-        </div>
-    </div>
-    <div class="hero">
-        <div class="hero_wrap">
-            <div class="big">
-                <img src="images/big_img.jpg">
-                <div class="big_text">
-                    <p>Lightness and beauty</p>
-                    <p>New arrival</p>
-                    <p>Boutique services</p>
-                </div>
-            </div>
-            <div class="small">
-                <div>
-                    <img src="images/small1.jpg">
-                    <span>Long Sleeve</span>
-                </div>
-                <div>
-                    <img src="images/small2.jpg">
-                    <span>Cycling Jersey</span>
-                </div>
-                <div>
-                    <img src="images/small3.jpg">
-                    <span>Cycling Shorts</span>
-                </div>            
-            </div>
-            <div class="hero_info">
-                <div>
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <a href="#">ВОЗВРАТ ДЕНЕГ</a>
-                    <p>Вернуть свои деньги за товар</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-plane-up"></i>
-                    <a href="#">БЫСТРАЯ ДОСТАВКА</a>
-                    <p>Быстрая экспресс-доставка СДЭК</p>
-                </div>
-                <div>
-                    <i class="fa-regular fa-clock"></i>
-                    <a href="#">ПОДДЕРЖКА КЛИЕНТОВ</a>
-                    <p>24 / 7 круглосуточная поддержка</p>
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__top__container">
+                <div class="row justify-content-between  header__top__row">
+                    <div class="col row header__top__left">
+                        <p class="col-3">Тел. +7 495-432-7654</p>
+                        <p class="col-3">E-mail: info@boutique.com</p>
+                    </div> 
+                    <div class="col-3 row header__top__right">
+                        <div class="col account">
+                            <a href="#login" title="Войти">Войти</a>
+                            <span>/</span>
+                            <a href="#reg" title="Регистрация">Регистрация</a>
+                        </div>
+                        <div class="col izb">
+                            <a href="#izb" title="Избранное">Избранное (0)</a>
+                        </div>    
+                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main_top content">
-        <div class="main_line">
-            <p>Предложение недели</p>
+        <div class="header__main container">
+            <div class="row header__main__row">
+                <div class="col-4 header__main__logo">
+                    <img src="images/logo7.png" id="logo">
+                    <a class="fixed" href="#logo"></a>
+                </div>
+                <div class="col">
+                    <form class="header__main__search search row" action="#" method="POST">
+                        <input class="col-10 search__input" type="text" placeholder="Поиск товаров...">
+                        <button class="col search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>    
+                </div>
+                
+                <div class="col-2 header__main__market">
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                        <span>0</span>   
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>  
+        <div class="header__bottom">
+            <div class="container header__bottom__wrap">
+                <div class="header__bottom__wrap row align-items-center">
+                    <div class="header__bottom__left col-2">
+                        <p><i class="fa-solid fa-list"></i> Все категории</p>
+                        <nav class="header__bottom__left__nav">
+                            <ul>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Блейзеры</a></li>
+                                <li><a href="#">Рубашки</a></li>
+                                <li><a href="#">Юбки</a></li>
+                                <li><a href="#">Шорты</a></li>
+                                <li><a href="#">Велосипедная шапочки</a></li>
+                                <li><a href="#">Велосипедные перчатки</a></li>
+                                <li><a href="#">Трикотаж для велоспорта</a></li>
+                                <li><a href="#">Велосипедный комплект</a></li>
+                                <li><a href="#">Велосипедные шорты</a></li>
+                                <li><a href="#">Носки</a></li>
+                                <li><a href="#">Комбенизон</a></li>
+                                <li><a href="#">Лосины</a></li>
+                                <li><a href="#">Рашгард</a></li>
+                                <li><a href="#">Топы</a></li> 
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__bottom__right col">
+                        <ul>
+                            <li><a href="#/" class="active">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
         </div>
-        <div class="main_left">
-            <ul>
-                <li>
-                    <div>
-                        <img src="images/main1.jpg" class="active">
-                        <div>
-                            <p>Топ Artic Stars</p>
-                            <p class="price"><span>4 599 &#8381;</span> 3 700 &#8381;</p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+    </header>
+    <section class="main">
+        <article class="hero container">
+            <div class="container hero__wrap">
+                <div class="row  hero__row">
+                    <div class="col-12">
+                        <div class="row justify-content-center hero__row__top">
+                            <div class="col-8 big">
+                                <div id="caruselMain" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#caruselMain" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#caruselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#caruselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner my-carousel">
+                                    <div class="carousel-item my-carousel__item">
+                                        <img src="images/big_main.jpg" class="d-block w-100" alt="images/big_main.jpg">
+                                        <div class="big__text__1 carousel-caption d-none d-md-block">
+                                            <p>Lightness and beauty</p>
+                                            <p>New arrival</p>
+                                            <p>Boutique services</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item my-carousel__item active">
+                                        <img src="images/big_main_1.jpg" class="d-block w-100" alt="images/big_main.jpg">
+                                        <div class="big__text__2 carousel-caption d-none d-md-block">
+                                            <img src="images/Trek.svg" alt="logo">
+                                            <p>ТREK- это скорость, драйв и незабываемые ощущения!</p>
+                                            <p>Испытай себя на горных трассах и стань чемпионом.</p>
+                                            <button>Перейти</button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item my-carousel__item">
+                                        <img src="images/big_main_2.jpg" class="d-block w-100" alt="images/big_main.jpg">
+                                        <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 small">
+                                <div class="row small__row">
+                                    <div class="col-12">
+                                        <a href="#" class="small__link">
+                                            <div class="small__item">
+                                                <img src="images/little_main.jpg">
+                                                <span>Long Sleeve</span>    
+                                            </div>    
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="small__item">
+                                            <img src="images/little_main_1.jpg">
+                                            <span>Cycling Jersey</span>    
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="small__item">
+                                            <img src="images/little_main_2.jpg">
+                                            <span>Cycling Shorts</span>    
+                                        </div>
+                                        
+                                    </div>   
+                                </div>
+                                        
+                            </div>    
+                        </div>    
+                    </div>
+                    
+                    
+                    <div class="col-12 hero__info">
+                        <div class="row">
+                            <div class="col hero__info__item">
+                                <div class="hero__info__card row">
+                                    <div class="hero__info__icon col-2">
+                                        <i class="fa-solid fa-money-bill-wave fa-rotate-by" style="--fa-rotate-angle: 150deg;"></i>
+                                    </div>
+                                    <div class="hero__info__text col-8">
+                                        <h4>ВОЗВРАТ ДЕНЕГ</h4>
+                                        <p>Вернуть свои деньги за товар</p>       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col hero__info__item">
+                                <div class="hero__info__card row">
+                                    <div class="hero__info__icon col-2">
+                                        <i class="fa-solid fa-truck"></i>
+                                    </div>
+                                    <div class="hero__info__text col-8">
+                                        <h4>БЫСТРАЯ ДОСТАВКА</h4>
+                                        <p>Быстрая экспресс-доставка СДЭК</p>    
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col hero__info__item">
+                                <div class="hero__info__card row">
+                                    <div class="hero__info__icon col-2">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </div>
+                                    <div class="hero__info__text col-8">
+                                        <h4>ПОДДЕРЖКА КЛИЕНТОВ</h4>
+                                        <p>24 / 7 круглосуточная поддержка</p>    
+                                    </div>    
+                                </div>
+                            </div>    
+                        </div>
+                        
+                    </div>    
+                </div>
+                
+            </div>
+        </article>
+        <article class="main__week container">
+            <div class="main__line">
+                <p>Предложение недели</p>
+            </div>
+            <div class="row main__week__products">
+                <div id="carouselProduct" class="carousel slide carousel-product__wrap row">
+                    <div class="main__week__left col-4">
+                        <div class="row main__week__left__row carousel-indicators">
+                            <div class="col-12 main__week__left__item">
+                                <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="main__week__left__link active">
+                                    <div class="main__week__left__img">
+                                        <img src="images/product1_1.jpg">
+                                    </div>
+                                    <div class="main__week__left__context">
+                                        <h3 class="title">SARGAN АГИДЕЛЬ</h3>
+                                        <p class="price__old">2 036 &#8381;</span>
+                                        <p class="price">1 904 &#8381;</p>
+                                        <div class="star row" data-count="6"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-12 main__week__left__item">
+                                <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2" class="main__week__left__link">
+                                    <div class="main__week__left__img">
+                                        <img src="images/product2_1.jpg">
+                                    </div>
+                                    <div class="main__week__left__context">
+                                        <h3 class="title">Рашгард мужской черный Outshok</h3>
+                                        <p class="price__old">2 599 &#8381;</span>
+                                        <p class="price">1 899 &#8381;</p>
+                                        <div class="star row" data-count="10"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-12 main__week__left__item">
+                                <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3" class="main__week__left__link">
+                                    <div class="main__week__left__img">
+                                        <img src="images/product3_1.jpg">
+                                    </div>
+                                    <div class="main__week__left__context">
+                                        <h3 class="title">Рашгард Nubias Спорт</h3>
+                                        <p class="price__old">1 006 &#8381;</span>
+                                        <p class="price">934 &#8381;</p>
+                                        <div class="star row" data-count="7"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-12 main__week__left__item">
+                                <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="3" aria-label="Slide 4" class="main__week__left__link">
+                                    <div class="main__week__left__img">
+                                            <img src="images/product4_1.jpg">
+                                    </div>
+                                    <div class="main__week__left__context">
+                                        <h3 class="title">Велокуртка CROSSSport</h3>
+                                        <p class="price__old">5 064 &#8381;</span>
+                                        <p class="price">4 742 &#8381;</p>
+                                        <div class="star row" data-count="8"></div>
+                                    </div>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </li>
-               <li>
-                    <div>
-                        <img src="images/main2.jpg">
-                        <div>
-                            <p>Рашгард Point Blue</p>
-                            <p class="price"><span>3 250 &#8381;</span> 2 560 &#8381;</p>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                    <div class="main__week__right col-8">
+                        <div class="carousel-inner carousel-product">
+                            <div class="carousel-item carousel-product__item active">
+                                <div class="card carousel-product__card">
+                                    <div class="carousel-product__img">
+                                        <img src="images/product1_1.jpg" class="card-img-top" alt="product">
+                                    </div>
+                                    <div class="card-body carousel-product__body">
+                                        <h3 class="card-title">SARGAN АГИДЕЛЬ</h3>
+                                        <div class="price__old">2 036</div>
+                                        <div class="price">1 904</div>
+                                        <p class="card-text">Гидромайка, Рашгард, Rushguard - стильная и модная защита от солнца, ультафиолета – UPF 50+ , от медуз, от прикосновения к опасным водным растениям и животным.</p>
+                                        <div class="star row" data-count="8"></div>
+                                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-product__item">
+                                <div class="card carousel-product__card">
+                                    <div class="carousel-product__img">
+                                        <img src="images/product2_1.jpg" class="card-img-top" alt="product">
+                                    </div>
+                                    <div class="card-body carousel-product__body">
+                                        <h3 class="card-title">Рашгард мужской черный Outshok</h3>
+                                        <div class="price__old">2 599</div>
+                                        <div class="price">1 899</div>
+                                        <p class="card-text">Рашгард для грепплинга и других видов спортивных единоборств изготовлен из эластичного материала, облегающий крой и длинные рукава обеспечивают комфорт при тренировках. Эта одежда была разработана совместно с бразильскими специалистами по джиу-джитсу и сохраняет свою эффективность в течение длительного времени. Состав: 15% эластана, 85% полиэстера.</p>
+                                        <div class="star row" data-count="7"></div>
+                                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-product__item">
+                                <div class="card carousel-product__card">
+                                    <div class="carousel-product__img">
+                                        <img src="images/product3_1.jpg" class="card-img-top" alt="product">
+                                    </div>
+                                    <div class="card-body carousel-product__body">
+                                        <h3 class="card-title">Рашгард Nubias Спорт</h3>
+                                        <div class="price__old">2 599</div>
+                                        <div class="price">1 899</div>
+                                        <p class="card-text">Женская спортивная кофта - это отличный выбор для активных женщин, которые заботятся о своем здоровье и физической форме. Сочетание комфорта и стиля делает этот рашгард идеальным для фитнес зала и других спортивных мероприятий. </p>
+                                        <div class="star row" data-count="7"></div>
+                                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-product__item">
+                                <div class="card carousel-product__card">
+                                    <div class="carousel-product__img">
+                                        <img src="images/product4_1.jpg" class="card-img-top" alt="product">
+                                    </div>
+                                    <div class="card-body carousel-product__body">
+                                        <h3 class="card-title">Велокуртка CROSSSport</h3>
+                                        <div class="price__old">5 064</div>
+                                        <div class="price">4 742</div>
+                                        <p class="card-text">Легкая женская ветровка
+                                            Легкая ветровка для велоспорта, защитит от ветра в холодную погоду, яркая расцветка и светоотражающие элементы, сделают дорогу более безопасной по дорогам. Сзади карман для велопринадлежностей, большой капюшон утягивающийся на резинке, можно надевать прямо на шлем. Светоотражающие элементы, ткань водоотталкивающая, ветрозащитная. Есть подклад</p>
+                                        <div class="star row" data-count="7"></div>
+                                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TODO наползает блок на блок -->
+                            <button class="carousel-control-prev carousel-product__button" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev">
+                                <i class="fa-solid fa-angle-left carousel-product__icon"></i>
+                                <span>Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next carousel-product__button" type="button" data-bs-target="#carouselProduct" data-bs-slide="next">
+                                <span>Следующий</span>
+                                <i class="fa-solid fa-angle-right carousel-product__icon"></i>
+                            </button>
                         </div>
                     </div>
-                </li>
-               <li>
-                    <div>
-                        <img src="images/main3.jpg">
-                        <div>
-                            <p>Топ Vergo TRIPLEX</p>
-                            <p class="price"><span>4 280 &#8381;</span> 3 769 &#8381;</p>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </article>
+        <article class="main__banner-one container">
+            <div class="row">
+                <div class="col-6 main__banner-one__left main__banner-one__item">
+                    <div class="main__banner-one__wrap">
+                        <img src="images/main_cen1.png">
+                        <div class="main__banner-one__context">
+                            <h2>
+                                LED BY THE MINIX TRIO
+                            </h2>
+                            <p>
+                                Этот дизайн был вдохновлен c минималистичнойи свободной формой
+                            </p>
+                            <a href="#" class="button">Купить сейчас</a>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="images/main4.jpg">
-                        <div>
-                            <p>Комбинезон Bona Fide</p>
-                            <p class="price"><span>4 830 &#8381;</span>   3 725 &#8381;</p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
+                </div>
+                <div class="col-6 main__banner-one__right main__banner-one__item">
+                    <div class="main__banner-one__wrap">
+                        <img src="images/main_cen2.png">
+                        <div class="main__banner-one__context">
+                            <h2>
+                                GYMSHARK ENERGY
+                            </h2>
+                            <p>
+                                Силикон итальянского производства привлекательный дизайн
+                            </p>
+                            <a href="#" class="button">Купить сейчас</a>
+                        </div>    
+                </div>
+            </div>
+        </article>
+        <article class="main_today container">
+            <div class="main__line">
+                <p>Товары сегодня</p>
+                <ul>
+                    <li><a href="#" class="active">Рекомендуем</a></li>
+                    <li><a href="#">Популярное</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Топ рейтинг</a></li>
+                    <li><a href="#">Последнее поступления</a></li>
+                </ul>
+            </div>
+            <div id="carouselToday" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item carousel-today__item active">
+                    <img src="images/bike_2.jpg" class="d-block col-3" alt="...">
+                  </div>
+                  <div class="carousel-item carousel-today__item">
+                    <img src="images/bike_1.jpg" class="d-block col-3" alt="...">
+                  </div>
+                  <div class="carousel-item carousel-today__item">
+                    <img src="images/bike_1.jpg" class="d-block col-3" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselToday" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselToday" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- <div class="main_today_content">
+                <div>
+                    <div class="img1">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>     
                     </div>
-                </li>
-            </ul>
-        </div>
-        <div class="main_right">
-            <div class="main_right_wrap">
-                <div class="main_right_wrap_content">
-                    <div class="img">
-                    <a href="#"></a>
-                        <div class="promo">
-                            <p>Sale</p>
-                            <p>Hot</p>
-                        </div>
+                    <a href="#">Sun Protective Sleeves Born to Ride</a>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="img2">
                         <div class="img_content">
                             <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
                             <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
                             <a href="#">В корзину</a>
                         </div>
                     </div>
-                    <div class="main_right_wrap_right">
-                        <p>Топ Artic Stars</p>
-                        <p class="price"><span>4 599 &#8381;</span> 3 700 &#8381;</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <a href="#">Signature Mini Cycling Bib Shorts White</a>
+                    <p>140 &#8381;</p>   
+                    <div>
                         <i class="fa-regular fa-star"></i>
-                        <p>
-                            Купи рашгард mini “Military Arctic Stars” и с комфортом занимайся в зале или на свежем воздухе. Ты получаешь полную концентрацию на 
-                        </p>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
-                <div class="direction">
-                    <div class="prev">
-                        <p><i class="fa-solid fa-angles-left"></i>Предыдущий</p>
+                <div>
+                    <div class="img3">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>
                     </div>
-                    <div class="next">
-                        <p>Следующий<i class="fa-solid fa-angles-right"></i></p>
+                    <a href="#">Cycling Jersey Girls Rule</a>
+                    <p>130 &#8381;</p>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>  
+                </div>
+                <div>
+                    <div class="img4">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
+                    <p>140 &#8381;</p>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
+            </div> -->
+        </article>
+        <article class="banner">
+            <img src="images/full_screen.jpg" alt="banner" class="banner__img">
+            <div class="banner__context">
+                <div class="row justify-content-between">
+                    <div class="col banner__context__left">
+                        <h2>Горный велосипеды</h2>
+                        <p>Для тренеровок и спорта </p>
+                        <a href="#" class="button">Выбрать модель</a>          
+                    </div>
+                    <div class="col-2 banner__context__right">
+                        <a href="#">
+                            <svg width="165" height="35" viewBox="0 0 165 35" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><path d="M36 13.48l-13.46-.06L21.09 0l-7.27 13.35L0 13.27l9.08 8.37L1.93 35l13.44-8.5 9.43 8.4-1.34-13.5L36 13.48zM9.17 27.44l3.46-6.6-5.46-4.78 19.56.12L9.17 27.44z" fill="#E9292B"></path><path d="M157.02 33c-3.1 0-4.95-.86-6.12-2.69l-7.1-10.63L139.21 33H133l6.67-20h1.4c2.58 0 4.51.37 6.03 2.58l7.2 10.88L158.77 13H165l-6.67 20h-1.3zM33 33l1.37-4.19H48.8c.82.05 1.64-.13 2.38-.5.34-.19.58-.5.7-.86a.66.66 0 0 0-.13-.5 2.15 2.15 0 0 0-1.19-.66l-9.4-2.68c-1.81-.53-3.16-1.48-3.78-2.7a3.31 3.31 0 0 1-.16-2.7 7.13 7.13 0 0 1 2.95-3.5 9.83 9.83 0 0 1 5.68-1.7H60l-1.36 4.19h-13c-.4 0-1.58 0-1.97.48-.27.3-.38.7-.3 1.1.17.37.5.66.9.78l.48.18 9.38 2.68c1.8.53 3.11 1.45 3.7 2.6.44.86.5 1.85.17 2.76a5.53 5.53 0 0 1-2.99 3.6 14.49 14.49 0 0 1-6.7 1.62H33zM62.3 13L61 17.14h8.26L64.18 33h6.02l5.08-15.86h7.4L84 13zM106.75 27.76l20.74-7.95c2.4-.92 1.97-2.66.52-2.66h-12.38l-1.45 4.34-6.08 2.32 3.57-10.79 17.86-.02a4.8 4.8 0 0 1 3.42 1.18c.74.78 1.12 1.8 1.04 2.85-.08 2.53-2.07 5.26-4.85 6.66-.28.14-.7.33-1.15.51l4.35 8.63h-6.24l-3.36-6.67L105 33l1.75-5.24zM108.66 17.16L110 13H88.08s-4.74 14.77-4.74 14.83c-1.14 3.4.75 5.17 3.45 5.17h16.8l1.34-4.16h-13.9c-.45 0-1.06-.08-1.32-.43-.26-.36-.16-.93 0-1.35l.75-2.18h12.4l1.25-3.8h-12.5l1.33-3.93 15.72.01z" fill="#363436"></path></g></svg>
+                        </a>
+                    </div>
+                </div>
+                    
             </div>
-        </div>
-    </div>
-    <div class="main_center content">
-        <div class="main_center_left">
-            <img src="images/main_cen1.png">
+        </article>
+        <article class="prod container">
             <div>
-                <h2>
-                    LED BY THE MINIX TRIO
-                </h2>
-                <p>
-                    Этот дизайн был вдохновлен c минималистичнойи свободной формой
-                </p>
-                <a href="#" class="button">Купить сейчас</a>
-            </div>
-        </div>
-        <div class="main_center_right">
-            <img src="images/main_cen2.png">
-            <div>
-                <h2>
-                    GYMSHARK ENERGY
-                </h2>
-                <p>
-                    Силикон итальянского производства привлекательный дизайн
-                </p>
-                <a href="#" class="button">Купить сейчас</a>
-            </div>
-        </div>        
-    </div>
-    <div class="main_today content">
-        <div class="main_line">
-            <p>Товары сегодня</p>
-            <ul>
-                <li><a href="#" class="active">Рекомендуем</a></li>
-                <li><a href="#">Популярное</a></li>
-                <li><a href="#">Скидки</a></li>
-                <li><a href="#">Топ рейтинг</a></li>
-                <li><a href="#">Последнее поступления</a></li>
-            </ul>
-        </div>
-        <div class="main_today_content">
-            <div>
-                <div class="img1">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
-                    </div>     
-                </div>
-                <a href="#">Sun Protective Sleeves Born to Ride</a>
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </div>
-             <div>
-                <div class="img2">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">В корзину</a>
-                    </div>
-                </div>
-                <a href="#">Signature Mini Cycling Bib Shorts White</a>
-                <p>140 &#8381;</p>   
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </div>
-             <div>
-                <div class="img3">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <a href="#">Cycling Jersey Girls Rule</a>
-                <p>130 &#8381;</p>
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>  
-            </div>
-             <div>
-                <div class="img4">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
-                <p>140 &#8381;</p>
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </div>
-       </div>
-    </div>
-    <div class="banner">
-        <img src="images/banner.png" alt="banner">
-        <div class="banner_context">
-            <p>Велосипедные костюмы экстра класса для женщин</p>
-            <a href="#" class="button">Купить сейчас</a>      
-        </div>
-    </div>
-    <div class="prod content">
-        <div>
-            <ul>
-                <li>
-                     <div>
-                        <div class="main_line">
-                            <p>Новое поступление</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod1.jpeg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Женский Трикотаж с длинным рукавом</a>
-                        <p class="price"><span>5 140 &#8381;</span>  4 119 &#8381;</p>
+                <ul>
+                    <li>
                         <div>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <div class="main_line">
+                                <p>Новое поступление</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod2.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Велосипедные Шорты-Нагрудники</a>
-                        <p class="price">6 299 &#8381;</p>
-                        <div>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod1.jpeg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Женский Трикотаж с длинным рукавом</a>
+                            <p class="price"><span>5 140 &#8381;</span>  4 119 &#8381;</p>
+                            <div>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod3.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">DS PRO Open Back Swimsuit</a>
-                        <p class="price">39 ₽ – 59 &#8381;</p>
-                        <div>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod2.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Велосипедные Шорты-Нагрудники</a>
+                            <p class="price">6 299 &#8381;</p>
+                            <div>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>
-                     <div>
-                        <div class="main_line">
-                            <p>Топ рейтинг</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod3.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">DS PRO Open Back Swimsuit</a>
+                            <p class="price">39 ₽ – 59 &#8381;</p>
+                            <div>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod4.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Велосипедная Майка Женская</a>
-                        <p class="price">6 770  &#8381;</p>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod5.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Топ Arctic Stars</a>
-                        <p class="price">4 599 &#8381;</p>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod6.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Комбинезон Bona Fide</a>
-                        <p class="price"><span>4 830 &#8381;</span>  3 725 &#8381;</p>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>
-                     <div>
-                        <div class="main_line">
-                            <p>Рекомендуемое</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod7.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Cycling Cap "Girls Rule"</a>
-                        <p class="price"><span>33 &#8381;</span>  29&#8381;</p>
-                        <div>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/today1.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Sun Protective Sleeves Born to Ride</a>
-                        <p class="price"></p>
-                        <div>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><img src="images/prod9.jpg" alt="картинка"></a>
-                    <div class="prod_context">
-                        <a href="#">Cycling Jersey Girls Rule</a>
-                        <p class="price">130 &#8381;</p>
-                        <div>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="foto content">
-        <a href="#"><img src="images/foto1.jpg" alt="UpStore" title="UpStore"></a>
-        <a href="#"><img src="images/foto2.jpg" alt="UpStore" title="UpStore"></a>
-        <a href="#"><img src="images/foto3.jpg" alt="UpStore" title="UpStore"></a>
-    </div>
-    <div class="like content">
-        <div class="main_line">
-            <p>Вам может понравиться</p>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
-            </ul>
-        </div>
-        <div class="like_context">
-            <div>
-                <div class="img1">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
-                    </div>     
-                </div>
-                <a href="#">Sun Protective Sleeves Born to Ride</a>
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </div>
-             <div>
-                <div class="img2">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">В корзину</a>
-                    </div>
-                </div>
-                <a href="#">Signature Mini Cycling Bib Shorts White</a>
-                <p>140 &#8381;</p>   
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </div>
-             <div>
-                <div class="img3">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <a href="#">Cycling Jersey Girls Rule</a>
-                <p>130 &#8381;</p>
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>  
-            </div>
-             <div>
-                <div class="img4">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
-                <p>140 &#8381;</p>
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div>
-                <div class="img4">
-                    <div class="img_content">
-                        <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                        <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#">Подробнее</a>
+                <ul>
+                    <li>
+                        <div>
+                            <div class="main_line">
+                                <p>Топ рейтинг</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod4.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Велосипедная Майка Женская</a>
+                            <p class="price">6 770  &#8381;</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod5.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Топ Arctic Stars</a>
+                            <p class="price">4 599 &#8381;</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod6.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Комбинезон Bona Fide</a>
+                            <p class="price"><span>4 830 &#8381;</span>  3 725 &#8381;</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <div class="main_line">
+                                <p>Рекомендуемое</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod7.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Cycling Cap "Girls Rule"</a>
+                            <p class="price"><span>33 &#8381;</span>  29&#8381;</p>
+                            <div>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/today1.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Sun Protective Sleeves Born to Ride</a>
+                            <p class="price"></p>
+                            <div>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/prod9.jpg" alt="картинка"></a>
+                        <div class="prod_context">
+                            <a href="#">Cycling Jersey Girls Rule</a>
+                            <p class="price">130 &#8381;</p>
+                            <div>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="foto container">
+            <a href="#"><img src="images/foto1.jpg" alt="UpStore" title="UpStore"></a>
+            <a href="#"><img src="images/foto2.jpg" alt="UpStore" title="UpStore"></a>
+            <a href="#"><img src="images/foto3.jpg" alt="UpStore" title="UpStore"></a>
+        </article>
+        <article class="like container">
+            <div class="main_line">
+                <p>Вам может понравиться</p>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="like_context">
+                <div>
+                    <div class="img1">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>     
+                    </div>
+                    <a href="#">Sun Protective Sleeves Born to Ride</a>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
-                <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
-                <p>140 &#8381;</p>
                 <div>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="img2">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">В корзину</a>
+                        </div>
+                    </div>
+                    <a href="#">Signature Mini Cycling Bib Shorts White</a>
+                    <p>140 &#8381;</p>   
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="img3">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <a href="#">Cycling Jersey Girls Rule</a>
+                    <p>130 &#8381;</p>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>  
+                </div>
+                <div>
+                    <div class="img4">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
+                    <p>140 &#8381;</p>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="img4">
+                        <div class="img_content">
+                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
+                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
+                    <p>140 &#8381;</p>
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="footer">
+        </article>
+    </section>
+    <footer class="footer">
         <ul class="footer_wrap content">
             <li class="footer_wrap_logo_social">
                 <div class="footer_logo">
@@ -685,7 +841,7 @@
             <li class="footer_sub">
                 <h2>Подпишитесь на нашу рассылку</h2>
                 <p>Мы будем посылать только хорошие новости</p>
-                <input type="email" name="" placeholder="Ваш e-mail...">
+                <input type="email" name="" placeholder="Ваш e-mailimages/big_main.jpg">
                 <input type="button" name="" value="Подписаться">
 
             </li>
@@ -694,7 +850,10 @@
             `<p>&#169; Cyclepromax Theme. All Rights Reserved.</p>
             <img src="images/pay.png">
         </div>
-    </div>    
+    </footer>
+
+    <script src="js/star.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
 </body>
 </html>
 <!-- https://demo.prowebmarket.ru/wp/cyclepromax/ -->
