@@ -913,7 +913,7 @@
 .like .main_line li:hover a{
     color: rgba(231,61,68,1);
 }
-.footer{
+/* .footer{
     margin-top: 60px;
     background: rgba(27,27,27,1);  
 }
@@ -1096,4 +1096,4 @@
 .footer_bottom img{
     margin: 30px 0;
     float: right;
-}
+} */

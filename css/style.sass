@@ -1,20 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
+@import 'mixin.sass'
 
 :root
-    --bg-h: 27,27,27
+    --bg-primary: 27,27,27
     --c-white: 255,255,255
     --c-red: 231,61,68
+
+    --c-facebook: 59, 89, 152
+    --c-twitter: 0, 172, 238
+    --c-youtube: 196, 48, 43
+    --c-instagram: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+
 html
     font-size: 10px
 body
     font-size: 1.3rem
     font-family: 'Raleway', sans-serif
     font-weight: 500
+.content
+    margin: 0px auto
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+    @include md_768
+        width: 576px  
+    @include lg_992
+        width: 768px
+    @include xl_1230
+        width: 1230px
+    @include xxl_1400
+        width: 1230px
 
 .header
     &__top
         height: 44px
-        background: rgb(var(--bg-h))
+        background: rgb(var(--bg-primary))
         color: rgb(var(--c-white))
         & a
             color: rgb(var(--c-white))
@@ -49,11 +69,11 @@ body
                 text-align: center
                 line-height: 40px
                 border-radius: 50%
-                border: 1px solid rgb(var(--bg-h))
+                border: 1px solid rgb(var(--bg-primary))
                 transition: 0.1s ease
-                color: rgb(var(--bg-h))
+                color: rgb(var(--bg-primary))
                 &:hover
-                    background: rgb(var(--bg-h))
+                    background: rgb(var(--bg-primary))
                     color: rgb(var(--c-white))
                     cursor: pointer
                 & span
@@ -68,7 +88,7 @@ body
                     background: rgb(var(--c-red))
         
     &__bottom
-        background: rgb(var(--bg-h))
+        background: rgb(var(--bg-primary))
         width: 100%
         height: 50px
         &__wrap
@@ -185,7 +205,7 @@ body
             left: 10px
             color: rgb(var(--c-white))
             font-size: 2rem
-            text-shadow: 0 0 3px rgb(var(--bg-h)), 0 0 3px rgb(var(--bg-h))
+            text-shadow: 0 0 3px rgb(var(--bg-primary)), 0 0 3px rgb(var(--bg-primary))
 
 @keyframes text
     0%
@@ -211,7 +231,7 @@ body
             width: 15px
             border-top: none
             border-bottom: none
-            border: 2px solid rgb(var(--bg-h))
+            border: 2px solid rgb(var(--bg-primary))
             box-sizing: border-box
     &-product
         height: 100%
@@ -233,7 +253,7 @@ body
                 margin: 3%
                 object-fit: contain
         &__button
-            color: rgb(var(--bg-h))
+            color: rgb(var(--bg-primary))
             font-weight: bold
             height: 30px
             width: 45%
@@ -243,10 +263,10 @@ body
             bottom: 10px
             &:hover
                 opacity: 1
-                color: rgb(var(--bg-h))
+                color: rgb(var(--bg-primary))
             &:focus
                 opacity: 1
-                color: rgb(var(--bg-h))
+                color: rgb(var(--bg-primary))
             &.carousel-control-next
                 left: auto
                 right: 10px
@@ -262,7 +282,7 @@ body
     box-sizing: border-box
     &__item
         position: relative
-        background: rgb(var(--bg-h))
+        background: rgb(var(--bg-primary))
         height: 100%
         width: 100%
         & > img
@@ -279,7 +299,7 @@ body
         &__top
             height: 100%
     &__info
-        border: 1px solid rgba(var(--bg-h), .1)
+        border: 1px solid rgba(var(--bg-primary), .1)
         align-content: center
         &__icon
             color: rgb(var(--c-red))
@@ -293,13 +313,13 @@ body
             text-align: center
         &__card
             justify-content: center
-            color: rgb(var(--bg-h))
+            color: rgb(var(--bg-primary))
             text-decoration: none
 
         &__item
             &:nth-child(2)
-                border-left: 1px solid rgba(var(--bg-h), .1)
-                border-right: 1px solid rgba(var(--bg-h), .1)
+                border-left: 1px solid rgba(var(--bg-primary), .1)
+                border-right: 1px solid rgba(var(--bg-primary), .1)
 .star
     justify-content: center
     width: 100px !important
@@ -308,7 +328,7 @@ body
         &.fa-solid
             color: #fc0
         &.fa-regular
-            color: rgba(var(--bg-h), .4)
+            color: rgba(var(--bg-primary), .4)
     &__clay
         position: relative
         display: inline-block
@@ -335,7 +355,7 @@ body
 .main
     &__line
         position: relative
-        border-bottom: 1px solid rgba(var(--bg-h), .2)
+        border-bottom: 1px solid rgba(var(--bg-primary), .2)
         height: 30px
         margin-bottom: 10px 
         & > p
@@ -345,7 +365,7 @@ body
             margin: 0
             z-index: 2
             font-size: 1.6rem
-            color: rgb(var(--bg-h))
+            color: rgb(var(--bg-primary))
             display: inline-block
             height: 100%
             border-bottom: 1px solid rgb(var(--c-red))
@@ -383,7 +403,7 @@ body
 
             &__item
                 height: 25%
-                border-bottom: 1px solid rgba(var(--bg-h), .4)
+                border-bottom: 1px solid rgba(var(--bg-primary), .4)
                 padding: 0
                 &:last-child
                     border-bottom: none
@@ -421,16 +441,16 @@ body
                 margin: 5%
                 text-align: left
                 & .title
-                    color: rgb(var(--bg-h))
+                    color: rgb(var(--bg-primary))
                     font-size: calc(1rem + .4vw)
                 & p
                     margin: 0
                 & .price
-                    color: rgba(var(--bg-h), 1)
+                    color: rgba(var(--bg-primary), 1)
                     margin-left: 20%
                     &__old
-                        color: rgba(var(--bg-h), 0.4)
-                        text-decoration: line-through rgba(var(--bg-h), 0.6)
+                        color: rgba(var(--bg-primary), 0.4)
+                        text-decoration: line-through rgba(var(--bg-primary), 0.6)
                         margin-left: 10%
         &__right
             background: #a00
@@ -531,4 +551,148 @@ body
     padding: 0
     font-size: 1.2rem
     transition: 0.2s ease
+.social
+    &__title
+        width: 100%
+        font-size: 1.5rem
+        line-height: 2.2rem
+        font-weight: 600
+        text-transform: uppercase
+        margin: 3rem 0 3rem
+    &__list
+        display: flex
+        margin: 3rem 0 6rem
+        padding: 0
+    &__item
+        position: relative
+        margin-right: 1rem
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px solid rgba(var(--c-white), .7)
+        width: 3rem
+        height: 3rem
+        border-radius: 50%
+        text-decoration: none
+        
+        transition: 0.1s ease
+        &.social
+            &__instagram
+                & span,
+                & span::after
+                    background: var(--c-instagram)
+            &__facebook
+                & span,
+                & span::after
+                    background: rgb(var(--c-facebook))
+            &__twitter
+                & span,
+                & span::after
+                    background: rgb(var(--c-twitter))
+            &__youtube
+                & span,
+                & span::after
+                    background: rgb(var(--c-youtube))
+        &:hover
+            background: #333
+            & span
+                opacity: 1
+                top: -2.6rem
+            &.social
+                &__instagram
+                    background: var(--c-instagram)
+                &__facebook
+                    background: rgb(var(--c-facebook))
+                &__twitter
+                    background: rgb(var(--c-twitter))
+                &__youtube
+                    background: rgb(var(--c-youtube))
 
+            
+
+    &__icon
+        color: rgb(var(--c-white))
+        font-size: 1.4rem
+    &__text
+        position: absolute
+        opacity: 0
+        width: 6rem
+        height: 2rem
+        font-size: 1rem
+        text-align: center
+        padding: 0.1rem
+        background: #333
+        color: rgb(var(--c-white))
+        top: -3rem
+        left: -50%
+        transition: 0.5s ease
+        &::after
+            content: ''
+            bottom: -0.3rem
+            left: 2.8rem
+            position: absolute
+            background: #333
+            height: 0.5rem
+            width: 0.5rem
+            transform: rotate(45deg)
+.context
+    &__img
+        width: 15rem
+        height: auto
+    &__text     
+        font-size: 1.3rem
+        line-height: 2.6rem
+        color: rgba(var(--c-white), 0.5)
+        padding-right: 2.5rem
+        
+.footer
+    background: rgb(var(--bg-primary))
+    color: rgb(var(--c-white))
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        padding: 8rem 0 4rem 
+    &__left
+        width: 100%
+        @include lg_992
+            width: 50%
+        @include xl_1230
+            width: 50%     
+        @include xxl_1400
+            width: 33%
+        
+        
+    &__center
+        background: #0a0
+        display: flex
+        width: 100%
+        @include lg_992
+            width: 50%   
+        @include xl_1230
+            width: 50%  
+        @include xxl_1400
+            width: 33%
+    
+  
+        
+    &__right
+        background: #00a
+        width: 100%
+        @include lg_992
+            width: 100% 
+        @include xl_1230
+            width: 33%
+        @include xxl_1400
+            width: 33%
+
+
+    &__bottom
+        
+        // background: #aa0
+        &__wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-top: 1px solid rgba(var(--c-white), 0.2) 
+            padding: 6rem 0 2rem

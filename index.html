@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container header__top__container">
+            <div class="content header__top__container">
                 <div class="row justify-content-between  header__top__row">
                     <div class="col row header__top__left">
                         <p class="col-3">Тел. +7 495-432-7654</p>
@@ -771,84 +771,92 @@
         </article>
     </section>
     <footer class="footer">
-        <ul class="footer_wrap content">
-            <li class="footer_wrap_logo_social">
-                <div class="footer_logo">
-                    <img src="images/logo71.png" alt="logo">
-                    <p>
-                        Дерзайте и покажите свою силу,  в этом ярком женском костюме.Он обеспечивает правильную поддержку для всех ваших велосипедных прогулок.
-                    </p>
+            <div class="footer__wrap content">
+                <div class="footer__left">
+                    <div class="footer__context context">
+                        <img src="images/logo71.png" alt="logo" class="context__img">
+                        <p class="context__text">
+                            Дерзайте и покажите свою силу, в этом ярком женском костюме. Он обеспечивает правильную поддержку для всех ваших велосипедных прогулок.
+                        </p>
+                    </div>
+                    <div class="footer__social social">
+                        <h4 class="social__title">Мы в соцсетях</h4>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__link social__facebook">
+                                    <i class="fa-brands fa-facebook-f social__icon"></i>
+                                    <span class="social__text">
+                                        facebook
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link social__twitter">
+                                    <i class="fa-brands fa-twitter social__icon"></i>
+                                    <span class="social__text">
+                                        twitter
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link social__youtube">
+                                    <i class="fa-brands fa-youtube social__icon"></i>
+                                    <span class="social__text">
+                                        youtube
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link social__instagram">
+                                    <i class="fa-brands fa-instagram social__icon"></i>
+                                    <span class="social__text">
+                                        instagram
+                                    </span>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
                 </div>
-                <div class="footer_social">
-                    <h4>Мы в соцсетях</h4>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <span class="footer_f">
-                                    facebook
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-brands fa-twitter"></i>
-                                <span class="footer_twitter">
-                                    twitter
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-brands fa-youtube"></i>
-                                <span class="footer_youtube">
-                                    youtube
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                                <span class="footer_instagram">
-                                    instagram
-                                </span>
-                            </a>
-                        </li>
-                    </ul> 
+                <div class="footer__center">
+                    <div class="footer__menu">
+                        <ul>
+                            <li>Меню</li>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__category">
+                        <ul>
+                            <li>Категории</li>
+                            <li><a href="#">Трикотаж вело</a></li>
+                            <li><a href="#">Майки велосипедные</a></li>
+                            <li><a href="#">Комбинезон</a></li>
+                            <li><a href="#">Лосины</a></li>
+                            <li><a href="#">Рашгард</a></li>
+                            <li><a href="#">Топы</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </li>
-            <li class="footer_menu">
-                <ul>
-                    <li>Меню</li>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Оплата и доставка</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </li>
-            <li class="footer_category">
-                <ul>
-                    <li>Категории</li>
-                    <li><a href="#">Трикотаж вело</a></li>
-                    <li><a href="#">Майки велосипедные</a></li>
-                    <li><a href="#">Комбинезон</a></li>
-                    <li><a href="#">Лосины</a></li>
-                    <li><a href="#">Рашгард</a></li>
-                    <li><a href="#">Топы</a></li>
-                </ul>
-            </li>
-            <li class="footer_sub">
-                <h2>Подпишитесь на нашу рассылку</h2>
-                <p>Мы будем посылать только хорошие новости</p>
-                <input type="email" name="" placeholder="Ваш e-mailimages/big_main.jpg">
-                <input type="button" name="" value="Подписаться">
-
-            </li>
-        </ul>
-        <div class="footer_bottom content">
-            `<p>&#169; Cyclepromax Theme. All Rights Reserved.</p>
-            <img src="images/pay.png">
+                <div class="footer__right">
+                    <form class="sub" method="POST" action="#">
+                        <h2 class="sub__title">Подпишитесь на нашу рассылку</h2>
+                        <p class="sub__text">Мы будем посылать только хорошие новости</p>
+                        <input class="sub__input" type="email" name="" placeholder="Ваш e-mailimages/big_main.jpg">
+                        <button type="button" class="sub__btn">Подписаться</button>
+                    </form>
+                </div>  
+                
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__wrap content">
+                    <p>&#169; Cyclepromax Theme. All Rights Reserved.</p>
+                    <img src="images/pay.png">
+                </div>
+                
+            </div> 
         </div>
     </footer>
 
