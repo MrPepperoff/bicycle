@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
     <link rel="stylesheet" href="css/style.css">
     
     <title>Вело-сайт</title>
@@ -15,28 +15,28 @@
         <div class="header__top">
             <div class="content header__top__container">
                 <div class="row justify-content-between  header__top__row">
-                    <div class="col row header__top__left">
-                        <p class="col-3">Тел. +7 495-432-7654</p>
-                        <p class="col-3">E-mail: info@boutique.com</p>
+                    <div class="col-6 row header__top__left">
+                        <div class="col-3">Тел. +7 999 999-99-99</div>
+                        <div class="col-4">E-mail: info@boutique.com</div>
                     </div> 
-                    <div class="col-3 row header__top__right">
-                        <div class="col account">
+                    <div class="col-6 row header__top__right">
+                        <div class="col-3 izb">
+                            <a href="#izb" title="Избранное">Избранное (0)</a>
+                        </div> 
+                        <div class="col-4 account">
                             <a href="#login" title="Войти">Войти</a>
                             <span>/</span>
                             <a href="#reg" title="Регистрация">Регистрация</a>
                         </div>
-                        <div class="col izb">
-                            <a href="#izb" title="Избранное">Избранное (0)</a>
-                        </div>    
                     </div>
                     
                 </div>
             </div>
         </div>
-        <div class="header__main container">
+        <div class="header__main content">
             <div class="row header__main__row">
-                <div class="col-4 header__main__logo">
-                    <img src="images/logo7.png" id="logo">
+                <div class="col-3 header__main__logo">
+                    <img src="images/logo_light.png" id="logo">
                     <a class="fixed" href="#logo"></a>
                 </div>
                 <div class="col">
@@ -97,7 +97,7 @@
     <section class="main">
         <article class="hero container">
             <div class="container hero__wrap">
-                <div class="row  hero__row">
+                <div class="row hero__row">
                     <div class="col-12">
                         <div class="row justify-content-center hero__row__top">
                             <div class="col-8 big">
@@ -108,30 +108,30 @@
                                         <button type="button" data-bs-target="#caruselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                     </div>
                                     <div class="carousel-inner my-carousel">
-                                    <div class="carousel-item my-carousel__item">
-                                        <img src="images/big_main.jpg" class="d-block w-100" alt="images/big_main.jpg">
-                                        <div class="big__text__1 carousel-caption d-none d-md-block">
-                                            <p>Lightness and beauty</p>
-                                            <p>New arrival</p>
-                                            <p>Boutique services</p>
+                                        <div class="carousel-item my-carousel__item carousel-big__item active">
+                                            <img src="images/banner/big_main.jpg" class="d-block w-100" alt="images/big_main.jpg">
+                                            <div class="carousel-big__context">
+                                                
+                                                <h5>Велосипед</h5>
+                                                <p>это свобода движения,</p>
+                                                <p>скорость мысли и радость каждого дня.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item my-carousel__item active">
-                                        <img src="images/big_main_1.jpg" class="d-block w-100" alt="images/big_main.jpg">
-                                        <div class="big__text__2 carousel-caption d-none d-md-block">
-                                            <img src="images/Trek.svg" alt="logo">
-                                            <p>ТREK- это скорость, драйв и незабываемые ощущения!</p>
-                                            <p>Испытай себя на горных трассах и стань чемпионом.</p>
-                                            <button>Перейти</button>
+                                        <div class="carousel-item my-carousel__item carousel-big__item">
+                                            <img src="images/banner/big_main_1.jpg" class="d-block w-100" alt="images/big_main.jpg">
+                                            <div class="carousel-big__context">
+                                                <img src="images/logotype/Trek.svg" class="carousel-big__logo" alt="logo">
+                                                <p>это скорость, драйв и незабываемые ощущения!</p>
+                                                <p>Испытай себя на горных трассах и стань чемпионом.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item my-carousel__item">
-                                        <img src="images/big_main_2.jpg" class="d-block w-100" alt="images/big_main.jpg">
-                                        <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
+                                        <div class="carousel-item my-carousel__item carousel-big__item">
+                                            <img src="images/banner/big_main_2.jpg" class="d-block w-100" alt="images/big_main.jpg">
+                                            <div class="carousel-big__context">
+                                                <h5>Third slide label</h5>
+                                                <p>Some representative placeholder content for the third slide.</p>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -140,32 +140,33 @@
                                     <div class="col-12">
                                         <a href="#" class="small__link">
                                             <div class="small__item">
-                                                <img src="images/little_main.jpg">
-                                                <span>Long Sleeve</span>    
+                                                <img src="images/banner/little_main_3.jpg">
+                                                <span>Городские</span>    
                                             </div>    
                                         </a>
                                         
                                     </div>
                                     <div class="col-12">
-                                        <div class="small__item">
-                                            <img src="images/little_main_1.jpg">
-                                            <span>Cycling Jersey</span>    
-                                        </div>
-                                        
+                                        <a href="#" class="small__link">
+                                            <div class="small__item">
+                                                <img src="images/banner/little_main_1.jpg">
+                                                <span>Шоссейные</span>    
+                                            </div>    
+                                        </a>
                                     </div>
                                     <div class="col-12">
-                                        <div class="small__item">
-                                            <img src="images/little_main_2.jpg">
-                                            <span>Cycling Shorts</span>    
-                                        </div>
-                                        
+                                        <a href="#" class="small__link">
+                                            <div class="small__item">
+                                                <img src="images/banner/little_main_2.jpg">
+                                                <span>Горные</span>    
+                                            </div>    
+                                        </a>
                                     </div>   
                                 </div>
                                         
                             </div>    
                         </div>    
                     </div>
-                    
                     
                     <div class="col-12 hero__info">
                         <div class="row">
@@ -220,7 +221,7 @@
                             <div class="col-12 main__week__left__item">
                                 <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="main__week__left__link active">
                                     <div class="main__week__left__img">
-                                        <img src="images/product1_1.jpg">
+                                        <img src="images/products/helmet-1_1.jpg" alt="product">
                                     </div>
                                     <div class="main__week__left__context">
                                         <h3 class="title">SARGAN АГИДЕЛЬ</h3>
@@ -233,7 +234,7 @@
                             <div class="col-12 main__week__left__item">
                                 <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2" class="main__week__left__link">
                                     <div class="main__week__left__img">
-                                        <img src="images/product2_1.jpg">
+                                        <img src="images/products/product2_1.jpg">
                                     </div>
                                     <div class="main__week__left__context">
                                         <h3 class="title">Рашгард мужской черный Outshok</h3>
@@ -246,7 +247,7 @@
                             <div class="col-12 main__week__left__item">
                                 <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3" class="main__week__left__link">
                                     <div class="main__week__left__img">
-                                        <img src="images/product3_1.jpg">
+                                        <img src="images/products/product3_1.jpg">
                                     </div>
                                     <div class="main__week__left__context">
                                         <h3 class="title">Рашгард Nubias Спорт</h3>
@@ -259,7 +260,7 @@
                             <div class="col-12 main__week__left__item">
                                 <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="3" aria-label="Slide 4" class="main__week__left__link">
                                     <div class="main__week__left__img">
-                                            <img src="images/product4_1.jpg">
+                                            <img src="images/products/product4_1.jpg">
                                     </div>
                                     <div class="main__week__left__context">
                                         <h3 class="title">Велокуртка CROSSSport</h3>
@@ -276,15 +277,17 @@
                             <div class="carousel-item carousel-product__item active">
                                 <div class="card carousel-product__card">
                                     <div class="carousel-product__img">
-                                        <img src="images/product1_1.jpg" class="card-img-top" alt="product">
+                                        <img src="images/products/helmet-1_1.jpg" class="card-img-top" alt="product">
                                     </div>
                                     <div class="card-body carousel-product__body">
-                                        <h3 class="card-title">SARGAN АГИДЕЛЬ</h3>
-                                        <div class="price__old">2 036</div>
-                                        <div class="price">1 904</div>
-                                        <p class="card-text">Гидромайка, Рашгард, Rushguard - стильная и модная защита от солнца, ультафиолета – UPF 50+ , от медуз, от прикосновения к опасным водным растениям и животным.</p>
+                                        <h3 class="card-title">Шлем велосипедный Uvex Finale 2.0</h3>
+                                        <div class="price__old">17 999 ₽</div>
+                                        <div class="price">16 199 ₽</div>
+                                        <p class="card-text">
+                                            Шлем Uvex с удлиненной затылочной частью и съемным козырьком обеспечивает надежную защиту во время катания по бездорожью. 20 вентиляционных отверстий гарантируют отличный воздухообмен для максимального комфорта, а технология FAS и система 3D IAS отвечают за точную посадку по голове. Размер можно регулировать с помощью поворотного кольца.
+                                        </p>
                                         <div class="star row" data-count="8"></div>
-                                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                                        <a href="#" class="btn btn-danger">В карзину</a>
                                     </div>
                                 </div>
                             </div>
@@ -334,7 +337,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- TODO наползает блок на блок -->
                             <button class="carousel-control-prev carousel-product__button" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev">
                                 <i class="fa-solid fa-angle-left carousel-product__icon"></i>
                                 <span>Предыдущий</span>
@@ -352,7 +354,7 @@
             <div class="row">
                 <div class="col-6 main__banner-one__left main__banner-one__item">
                     <div class="main__banner-one__wrap">
-                        <img src="images/main_cen1.png">
+                        <img src="images/banner/banner-left.jpg">
                         <div class="main__banner-one__context">
                             <h2>
                                 LED BY THE MINIX TRIO
@@ -366,7 +368,7 @@
                 </div>
                 <div class="col-6 main__banner-one__right main__banner-one__item">
                     <div class="main__banner-one__wrap">
-                        <img src="images/main_cen2.png">
+                        <img src="images/banner/banner-right.jpg">
                         <div class="main__banner-one__context">
                             <h2>
                                 GYMSHARK ENERGY
@@ -390,16 +392,16 @@
                     <li><a href="#">Последнее поступления</a></li>
                 </ul>
             </div>
-            <div id="carouselToday" class="carousel slide">
+            <!-- <div id="carouselToday" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item carousel-today__item active">
-                    <img src="images/bike_2.jpg" class="d-block col-3" alt="...">
+                    <img src="images/products/bicycle_1.jpg" class="d-block col-3" alt="...">
                   </div>
                   <div class="carousel-item carousel-today__item">
-                    <img src="images/bike_1.jpg" class="d-block col-3" alt="...">
+                    <img src=images/products/bicycle_1.jpg class="d-block col-3" alt="...">
                   </div>
                   <div class="carousel-item carousel-today__item">
-                    <img src="images/bike_1.jpg" class="d-block col-3" alt="...">
+                    <img src=images/products/bicycle_1.jpg class="d-block col-3" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselToday" data-bs-slide="prev">
@@ -410,83 +412,53 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-            <!-- <div class="main_today_content">
-                <div>
-                    <div class="img1">
-                        <div class="img_content">
-                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#">Подробнее</a>
-                        </div>     
-                    </div>
-                    <a href="#">Sun Protective Sleeves Born to Ride</a>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="img2">
-                        <div class="img_content">
-                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#">В корзину</a>
-                        </div>
-                    </div>
-                    <a href="#">Signature Mini Cycling Bib Shorts White</a>
-                    <p>140 &#8381;</p>   
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="img3">
-                        <div class="img_content">
-                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#">Подробнее</a>
-                        </div>
-                    </div>
-                    <a href="#">Cycling Jersey Girls Rule</a>
-                    <p>130 &#8381;</p>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>  
-                </div>
-                <div>
-                    <div class="img4">
-                        <div class="img_content">
-                            <a href="#" title="Сравнить"><i class="fa-solid fa-repeat"></i></a>
-                            <a href="#" title="Избранное"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#">Подробнее</a>
-                        </div>
-                    </div>
-                    <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
-                    <p>140 &#8381;</p>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
             </div> -->
+            <div class="carousel-today">
+                <div class="carousel-today__item">
+                    <a href='#' class="carousel-today__card">
+                        <img src="images/products/bicycle_1.jpg" class="carousel-today__img" alt="продукт">
+                        <div class="carousel-today__context">
+                            <h3 class="carousel-today__title">Title</h3>
+                            <p class="carousel-today__price">100 000 &#8381;</p>
+                            <div class="star row carousel-today__star" data-count="3"></div>
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="carousel-today__item">
+                    <a href='#' class="carousel-today__card">
+                        <img src="images/products/bicycle_1.jpg" class="carousel-today__img" alt="продукт">
+                        <div class="carousel-today__context">
+                            <h3 class="carousel-today__title">Title</h3>
+                            <p class="carousel-today__price">100 000 &#8381;</p>
+                            <div class="star row carousel-today__star" data-count="3"></div>
+                        </div>    
+                    </a>
+                </div>
+                <div class="carousel-today__item">
+                    <a href='#' class="carousel-today__card">
+                        <img src="images/products/bicycle_1.jpg" class="carousel-today__img" alt="продукт">
+                        <div class="carousel-today__context">
+                            <h3 class="carousel-today__title">Title</h3>
+                            <p class="carousel-today__price">100 000 &#8381;</p>
+                            <div class="star row carousel-today__star" data-count="3"></div>
+                        </div>    
+                    </a>
+                </div>
+                <div class="carousel-today__item">
+                    <a href='#' class="carousel-today__card">
+                        <img src="images/products/bicycle_1.jpg" class="carousel-today__img" alt="продукт">
+                        <div class="carousel-today__context">
+                            <h3 class="carousel-today__title">Title</h3>
+                            <p class="carousel-today__price">100 000 &#8381;</p>
+                            <div class="star row carousel-today__star" data-count="3"></div>
+                        </div>    
+                    </a>
+                </div>
+            </div>
         </article>
         <article class="banner">
-            <img src="images/full_screen.jpg" alt="banner" class="banner__img">
+            <img src="images/banner/full_screen.jpg" alt="banner" class="banner__img">
             <div class="banner__context">
                 <div class="row justify-content-between">
                     <div class="col banner__context__left">
@@ -518,13 +490,7 @@
                         <div class="prod_context">
                             <a href="#">Женский Трикотаж с длинным рукавом</a>
                             <p class="price"><span>5 140 &#8381;</span>  4 119 &#8381;</p>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                     <li>
@@ -532,13 +498,7 @@
                         <div class="prod_context">
                             <a href="#">Велосипедные Шорты-Нагрудники</a>
                             <p class="price">6 299 &#8381;</p>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                     <li>
@@ -546,13 +506,7 @@
                         <div class="prod_context">
                             <a href="#">DS PRO Open Back Swimsuit</a>
                             <p class="price">39 ₽ – 59 &#8381;</p>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                 </ul>
@@ -571,13 +525,7 @@
                         <div class="prod_context">
                             <a href="#">Велосипедная Майка Женская</a>
                             <p class="price">6 770  &#8381;</p>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                     <li>
@@ -585,13 +533,7 @@
                         <div class="prod_context">
                             <a href="#">Топ Arctic Stars</a>
                             <p class="price">4 599 &#8381;</p>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                     <li>
@@ -599,13 +541,7 @@
                         <div class="prod_context">
                             <a href="#">Комбинезон Bona Fide</a>
                             <p class="price"><span>4 830 &#8381;</span>  3 725 &#8381;</p>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                 </ul>
@@ -624,13 +560,7 @@
                         <div class="prod_context">
                             <a href="#">Cycling Cap "Girls Rule"</a>
                             <p class="price"><span>33 &#8381;</span>  29&#8381;</p>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                     <li>
@@ -638,13 +568,7 @@
                         <div class="prod_context">
                             <a href="#">Sun Protective Sleeves Born to Ride</a>
                             <p class="price"></p>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                     <li>
@@ -652,22 +576,30 @@
                         <div class="prod_context">
                             <a href="#">Cycling Jersey Girls Rule</a>
                             <p class="price">130 &#8381;</p>
-                            <div>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                            <div class="star row" data-count="3"></div>
                         </div>
                     </li>
                 </ul>
             </div>
         </article>
-        <article class="foto container">
-            <a href="#"><img src="images/foto1.jpg" alt="UpStore" title="UpStore"></a>
-            <a href="#"><img src="images/foto2.jpg" alt="UpStore" title="UpStore"></a>
-            <a href="#"><img src="images/foto3.jpg" alt="UpStore" title="UpStore"></a>
+        <article class="photo container">
+            <div class="row photo__row">
+                <div class="col-4 photo__item">
+                    <a href="#" class="photo__link">
+                        <img class="photo__img" src="images/banner/photo_1.jpg" alt="UpStore" title="UpStore">
+                    </a>
+                </div>
+                <div class="col-4 photo__item">
+                    <a href="#" class="photo__link">
+                        <img class="photo__img" src="images/banner/photo_2.jpg" alt="UpStore" title="UpStore">
+                    </a>
+                </div>
+                <div class="col-4 photo__item">
+                    <a href="#" class="photo__link">
+                        <img class="photo__img" src="images/banner/photo_3.jpg" alt="UpStore" title="UpStore">
+                    </a>
+                </div>
+            </div>
         </article>
         <article class="like container">
             <div class="main_line">
@@ -687,13 +619,7 @@
                         </div>     
                     </div>
                     <a href="#">Sun Protective Sleeves Born to Ride</a>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
+                    <div class="star row" data-count="3"></div>
                 </div>
                 <div>
                     <div class="img2">
@@ -705,13 +631,7 @@
                     </div>
                     <a href="#">Signature Mini Cycling Bib Shorts White</a>
                     <p>140 &#8381;</p>   
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
+                    <div class="star row" data-count="3"></div>
                 </div>
                 <div>
                     <div class="img3">
@@ -723,13 +643,7 @@
                     </div>
                     <a href="#">Cycling Jersey Girls Rule</a>
                     <p>130 &#8381;</p>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>  
+                    <div class="star row" data-count="3"></div> 
                 </div>
                 <div>
                     <div class="img4">
@@ -741,13 +655,7 @@
                     </div>
                     <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
                     <p>140 &#8381;</p>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
+                    <div class="star row" data-count="3"></div>
                 </div>
                 <div>
                     <div class="img4">
@@ -759,13 +667,7 @@
                     </div>
                     <a href="#">Signature Mini Cycling Bib Shorts Pink Women's</a>
                     <p>140 &#8381;</p>
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
+                    <div class="star row" data-count="3"></div>
                 </div>
             </div>
         </article>

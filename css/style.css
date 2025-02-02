@@ -7,6 +7,7 @@
   --c-twitter: 0, 172, 238;
   --c-youtube: 196, 48, 43;
   --c-instagram: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  --f-Raleway: "Raleway";
 }
 
 html {
@@ -15,24 +16,29 @@ html {
 
 body {
   font-size: 1.3rem;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--f-Raleway);
   font-weight: 500;
 }
 
 .content {
   margin: 0px auto;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 30px;
   box-sizing: border-box;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .content {
     width: 576px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .content {
     width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    width: 992px;
   }
 }
 @media (min-width: 1230px) {
@@ -47,9 +53,13 @@ body {
 }
 
 .header__top {
-  height: 44px;
+  padding: 9px 0 8px;
   background: rgb(var(--bg-primary));
-  color: rgb(var(--c-white));
+  color: rgba(var(--c-white), 0.9);
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  border-bottom: 1px solid #000;
+  font-family: var(--f-Raleway);
 }
 .header__top a {
   color: rgb(var(--c-white));
@@ -59,26 +69,36 @@ body {
 .header__top a:hover {
   color: rgb(var(--c-red));
 }
-.header__top__container, .header__top__row {
+.header__top__container {
+  justify-content: space-between;
   height: 100%;
+}
+.header__top__row {
+  height: 100%;
+  height: 2.6rem;
+  align-items: center;
 }
 .header__top__left {
   text-align: center;
   align-items: center;
+  justify-content: start;
 }
-.header__top__left > p {
+.header__top__left > div {
   padding: 0;
-  margin: 0;
+  margin: 0 1rem 0 0.5rem;
 }
 .header__top__right {
   align-items: center;
   text-align: center;
+  justify-content: end;
 }
 .header__main__row {
   align-items: center;
+  justify-content: space-between;
 }
 .header__main__logo {
-  text-align: center;
+  padding: 20px 0;
+  height: 100px;
 }
 .header__main__market .cart {
   margin: 0 auto;
@@ -187,10 +207,10 @@ body {
   z-index: 3;
 }
 .big__text__1 p:nth-child(2) {
-  top: 72px;
+  top: 7.2rem;
   left: 0;
   right: 0;
-  font-size: 9rem;
+  font-size: 3vw;
   text-transform: uppercase;
   font-weight: 800;
   opacity: 0;
@@ -198,15 +218,20 @@ body {
   z-index: 2;
 }
 .big__text__1 p:nth-child(3) {
-  top: 210px;
+  top: 20.8rem;
   left: 0;
   right: 0;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 200;
   text-transform: uppercase;
   opacity: 0;
   animation: 1.5s ease-in-out 1s forwards text;
   z-index: 1;
+}
+@media (min-width: 1230px) {
+  .big__text__1 p:nth-child(3) {
+    font-size: 2.8rem;
+  }
 }
 .big__text__2 {
   color: #fff;
@@ -218,6 +243,29 @@ body {
   filter: drop-shadow(0 0 1px rgb(var(--c-white)));
   top: 0;
   left: 0;
+}
+
+.carousel-big {
+  background: #a00;
+}
+.carousel-big__context {
+  position: absolute;
+  inset: 5%;
+  color: rgb(var(--c-white));
+}
+.carousel-big__context h5 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.carousel-big__context p {
+  font-size: 1.6rem;
+}
+.carousel-big__item {
+  position: relative;
+}
+.carousel-big__logo {
+  width: 100px;
+  filter: drop-shadow(0px 0px 5px #fff) drop-shadow(0px 0px 5px #000) drop-shadow(0px 0px 5px #000);
 }
 
 .small__row {
@@ -241,7 +289,7 @@ body {
 }
 .small__item > img {
   width: 100%;
-  height: 25vh;
+  height: 163px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.6s ease;
@@ -339,7 +387,32 @@ body {
   padding: 0 1rem;
 }
 .carousel-today {
-  background: #0a0;
+  display: flex;
+  margin-bottom: 4rem;
+}
+.carousel-today__item {
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  border-left: 1px solid #ccc;
+}
+.carousel-today__item:first-child {
+  border-left: none;
+}
+.carousel-today__card {
+  display: block;
+  background: #fff;
+  width: 100%;
+  padding: 0 0 10px 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+}
+.carousel-today__img {
+  width: 100%;
+}
+.carousel-today__star {
+  margin: 0 auto;
 }
 
 .my-carousel {
@@ -362,9 +435,6 @@ body {
   opacity: 0.75;
 }
 
-.hero {
-  height: 100vh;
-}
 .hero__wrap {
   height: 100%;
 }
@@ -372,7 +442,8 @@ body {
   height: 100%;
 }
 .hero__row__top {
-  height: 100%;
+  height: 550px;
+  overflow: hidden;
 }
 .hero__info {
   border: 1px solid rgba(var(--bg-primary), 0.1);
@@ -452,6 +523,26 @@ body {
   display: inline-block;
   height: 100%;
   border-bottom: 1px solid rgb(var(--c-red));
+}
+.main__line ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.main__line ul li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+.main__line ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.main__line ul li a.active, .main__line ul li a:hover {
+  color: rgb(var(--c-red));
 }
 .main__week {
   width: 100%;
@@ -668,6 +759,30 @@ body {
   transition: 0.2s ease;
 }
 
+.photo__link {
+  display: block;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .photo__link {
+    height: 550px;
+  }
+}
+@media (min-width: 1230px) {
+  .photo__link {
+    height: 750px;
+  }
+}
+.photo__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70% 50%;
+     object-position: 70% 50%;
+  width: 100%;
+  height: 100%;
+}
 .social__title {
   width: 100%;
   font-size: 1.5rem;
@@ -777,7 +892,13 @@ body {
   padding: 8rem 0 4rem;
 }
 .footer__left {
+  background: #a00;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .footer__left {
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .footer__left {
@@ -785,11 +906,6 @@ body {
   }
 }
 @media (min-width: 1230px) {
-  .footer__left {
-    width: 50%;
-  }
-}
-@media (min-width: 1400px) {
   .footer__left {
     width: 33%;
   }
@@ -799,17 +915,12 @@ body {
   display: flex;
   width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .footer__center {
     width: 50%;
   }
 }
 @media (min-width: 1230px) {
-  .footer__center {
-    width: 50%;
-  }
-}
-@media (min-width: 1400px) {
   .footer__center {
     width: 33%;
   }
@@ -818,17 +929,12 @@ body {
   background: #00a;
   width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .footer__right {
     width: 100%;
   }
 }
 @media (min-width: 1230px) {
-  .footer__right {
-    width: 33%;
-  }
-}
-@media (min-width: 1400px) {
   .footer__right {
     width: 33%;
   }
