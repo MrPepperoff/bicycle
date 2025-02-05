@@ -3,9 +3,10 @@
 
 :root
     --bg-primary: 27,27,27
+    --bg-primary-l: 47, 47, 47
     --c-white: 255,255,255
     --c-red: 231,61,68
-
+    --c-black: 0, 0, 0
     --c-facebook: 59, 89, 152
     --c-twitter: 0, 172, 238
     --c-youtube: 196, 48, 43
@@ -131,30 +132,63 @@ body
         height: 50px
         &__wrap
             height: 100%
+            position: relative
         &__left
             color: rgb(var(--c-white))
             display: inline-block
-            text-align: center
             margin: 0
             padding: 0
             & > p
                 margin: 0
-            &__nav
-                display: none
         &__right
             text-align: center
             display: inline-block
+            
             & ul
                 margin: 0
                 & li
+                    text-transform: uppercase
                     display: inline-block
-                    font-size: 1.5rem
-                    margin: 0 10px
+                    font-size: 1.3rem
+                    margin: 0 20px
+                    font-weight: 300
                     & a
                         text-decoration: none
-                        color: rgb(var(--c-white))
+                        color: rgba(var(--c-white), .7)
+                        transition: 0.1s ease
+                        &:hover
+                            color: rgb(var(--c-white))
                         &.active
                             color: rgb(var(--c-red))
+.nav
+    background: #ccc
+    position: absolute
+    top: 5rem
+    z-index: 100
+    display: none
+    &__wrap
+        height: 100%
+        position: absolute
+        &:hover
+            z-index: 100
+            & .nav
+                display: block
+    &__btn
+        border: none
+        color: rgb(var(--c-white))
+        background: transparent
+        position: absolute
+        bottom: 0
+        height: 100%
+    &__item
+        border-top: 1px solid rgba(var(--c-black), .2) 
+    &__link
+        text-decoration: none
+        color: rgb(var(--c-black))
+    &__list
+        padding: 0
+        
+            
 .search
     display: flex
     padding: 0
@@ -279,105 +313,13 @@ body
         // top: 0
         transform: translateY(0px) scale(1.0)            
 
-.carousel
-    height: 100%
-    &-indicators
-        height: 15px
-        bottom: 10px
-        & [data-bs-target]
-            background: rgb(var(--c-white))
-            border-radius: 50%
-            height: 100%
-            width: 15px
-            border-top: none
-            border-bottom: none
-            border: 2px solid rgb(var(--bg-primary))
-            box-sizing: border-box
-    &-product
-        height: 100%
-        &__item
-            height: 100%
-        &__body
-            width: 60%
-        &__card
-            border: 0
-            border-radius: 0
-            width: 100%
-            height: 100%
-            flex-direction: row
-            flex-wrap: nowrap
-        &__img
-            width: 100%
-            & img
-                width: 94%
-                margin: 3%
-                object-fit: contain
-        &__button
-            color: rgb(var(--bg-primary))
-            font-weight: bold
-            height: 30px
-            width: 45%
-            top: auto
-            left: 10px
-            right: 10px
-            bottom: 10px
-            &:hover
-                opacity: 1
-                color: rgb(var(--bg-primary))
-            &:focus
-                opacity: 1
-                color: rgb(var(--bg-primary))
-            &.carousel-control-next
-                left: auto
-                right: 10px
-        &__icon
-            font-size: 2rem
-            padding: 0 1rem
-    &-today
-        display: flex
-        margin-bottom: 4rem 
-        &__item
-            // background: #afa
-            width: 25%
-            text-align: center
-            padding: 5px
-            border-left: 1px solid #ccc
-            &:first-child
-                border-left: none
-        &__card
-            display: block
-            background: #fff
-            width: 100%
-            padding: 0 0 10px 0 
-            box-sizing: border-box
-            text-decoration: none
-            color: #000
-        &__img
-            width: 100%
-        &__star
-            margin: 0 auto
-        
-.my-carousel
-    height: 100%
-    width: 100%
-    padding: 10px
-    box-sizing: border-box
-    &__item
-        position: relative
-        background: rgb(var(--bg-primary))
-        height: 100%
-        width: 100%
-        & > img
-            height: 100%
-            width: auto
-            object-fit: cover
-            opacity: 0.75
 .hero
     &__wrap
         height: 100%
     &__row
         height: 100%
         &__top
+            padding: 0
             height: 550px
             overflow: hidden
     &__info
@@ -470,7 +412,6 @@ body
                         color: rgb(var(--c-red))
                 
     &__week
-        width: 100%
         margin-bottom: 10px 
         &__products
             justify-content: center
@@ -631,6 +572,7 @@ body
             text-align: center
             & a
                 & svg
+                    height: 5vh
                     transition: 0.4s ease
                     filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
                 &:hover
@@ -685,14 +627,14 @@ body
         padding: 0
     &__item
         position: relative
-        margin-right: 1rem
+        margin-right: 0.5rem
     &__link
         display: flex
         justify-content: center
         align-items: center
-        border: 1px solid rgba(var(--c-white), .7)
-        width: 3rem
-        height: 3rem
+        border: 1px solid rgba(var(--c-white), .2)
+        width: 4rem
+        height: 4rem
         border-radius: 50%
         text-decoration: none
         
@@ -716,6 +658,7 @@ body
                     background: rgb(var(--c-youtube))
         &:hover
             background: #333
+            border: 1px solid rgba(var(--c-white), 0)
             & span
                 opacity: 1
                 top: -2.6rem
@@ -756,10 +699,12 @@ body
             height: 0.5rem
             width: 0.5rem
             transform: rotate(45deg)
+// .prod
 .context
     &__img
         width: 15rem
         height: auto
+        margin-bottom: 10px 
     &__text     
         font-size: 1.3rem
         line-height: 2.6rem
@@ -772,9 +717,8 @@ body
     &__wrap
         display: flex
         flex-wrap: wrap
-        padding: 8rem 0 4rem 
+        padding: 8rem 30px 4rem 
     &__left
-        background: #a00
         width: 100%
         @include md
             width: 100%
@@ -782,14 +726,14 @@ body
             width: 50%         
         @include xl
             width: 33%
-    
+
 
         
         
     &__center
-        background: #0a0
         display: flex
         width: 100%
+        justify-content: space-around
         @include md
             width: 50%        
         @include xl
@@ -797,7 +741,6 @@ body
 
 
     &__right
-        background: #00a
         width: 100%
         @include md
             width: 100% 
@@ -811,3 +754,33 @@ body
             align-items: center
             border-top: 1px solid rgba(var(--c-white), 0.2) 
             padding: 6rem 0 2rem
+.menu
+    margin: 0 10px
+    &__title
+        text-transform: uppercase
+    &__list
+        // background: rgba(200, 0, 0, 0.1)
+        padding: 0
+    
+    &__link
+        display: block
+        padding: 0.8rem 0
+        text-decoration: none
+        color: rgba(var(--c-white), 0.5)
+        transition: 0.1s ease
+        &:hover
+            color: rgba(var(--c-red), 1)
+.scroll-top
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgb(var(--bg-primary-l))
+    color: rgb(var(--c-white))
+    text-decoration: none
+    width: 5rem
+    height: 5rem
+    font-size: 2rem
+    position: fixed
+    bottom: 0
+    right: 0
+    z-index: 100

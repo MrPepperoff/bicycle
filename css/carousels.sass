@@ -1,0 +1,187 @@
+.my-carousel
+    margin-bottom: 4rem 
+    position: relative
+    overflow: hidden
+    &__list
+        display: inline-block
+        transition: 1s ease
+
+    &__item
+        display: inline-block
+        height: 100%
+        text-align: center
+        padding: 5px
+        border-left: 1px solid #ccc
+        &:first-child
+            border-left: none
+    &__indicator-next,
+    &__indicator-prev
+        position: absolute
+        font-size: 1.6rem
+        top: 50%
+        transform: translate(0, -0.8rem)
+        transition: all 0.5s ease, background 0.2s ease, border 0.2s ease, color 0.2s ease
+        opacity: 0.1
+        width: 2.6rem
+        height: 2.6rem
+        border: 1px solid rgba(var(--bg-primary), .5)
+        background: #eee
+        text-align: center
+        line-height: 2.6rem
+        z-index: 10
+        &:hover
+            background: #fcc
+            border: 1px solid rgba(var(--c-red), .5)
+            color: rgb(var(--c-red))
+    &__indicator-next
+        right: -2.6rem 
+    &__indicator-prev
+        left: -2.6rem
+    &:hover
+        & .my-carousel
+            &__indicator-next,
+            &__indicator-prev
+                opacity: 1
+            &__indicator-next
+                right: 0rem 
+            &__indicator-prev
+                left: 0rem
+.my-card
+    display: flex
+    flex-direction: column
+    background: #fff
+    width: 100%
+    height: 350px
+    padding: 0 0 10px 0 
+    box-sizing: border-box
+    text-decoration: none
+    color: #000
+    transition: 1s ease
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: contain
+        &__wrap
+            position: relative
+            height: 60%
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+            &:hover
+                & .my-card__user
+                    opacity: 1
+    &__user
+        position: absolute
+        bottom: 0.5rem
+        left: 0
+        display: flex
+        justify-content: space-around
+        width: 100%
+        opacity: 0
+        transition: 0.1s ease
+        & button,
+        & a
+            flex-grow: 1
+            background: rgb(var(--c-red))
+            color: rgb(var(--c-white))
+            border: none
+            margin: 0 5px
+            text-decoration: none
+            text-align: center
+            transition: 0.1s ease
+            &:hover
+                opacity: 0.8
+            &.active
+                background: rgb(var(--bg-primary))
+    &__star
+        margin: 0 auto
+    &__price
+        color: rgb(var(--c-black))
+        &__old
+            text-decoration: line-through
+            color: #aaa
+    &__context
+        height: 40%
+    
+// изменения bootstrap карусели
+.carousel
+    height: 100%
+    &-indicators
+        height: 15px
+        bottom: 10px
+        & [data-bs-target]
+            background: rgb(var(--c-white))
+            border-radius: 50%
+            height: 100%
+            width: 15px
+            border-top: none
+            border-bottom: none
+            border: 2px solid rgb(var(--bg-primary))
+            box-sizing: border-box
+    &-product
+        height: 100%
+        &__item
+            height: 100%
+        &__body
+            width: 60%
+        &__card
+            border: 0
+            border-radius: 0
+            width: 100%
+            height: 100%
+            flex-direction: row
+            flex-wrap: nowrap
+        &__img
+            width: 100%
+            & img
+                width: 94%
+                margin: 3%
+                object-fit: contain
+        &__button
+            color: rgb(var(--bg-primary))
+            font-weight: bold
+            height: 30px
+            width: 45%
+            top: auto
+            left: 10px
+            right: 10px
+            bottom: 10px
+            &:hover
+                opacity: 1
+                color: rgb(var(--bg-primary))
+            &:focus
+                opacity: 1
+                color: rgb(var(--bg-primary))
+            &.carousel-control-next
+                left: auto
+                right: 10px
+        &__icon
+            font-size: 2rem
+            padding: 0 1rem
+    &-like
+        &__list
+            display: flex
+        &__item
+            width: 25%
+            text-align: center
+            padding: 5px
+            border-left: 1px solid #ccc
+            &:first-child
+                border-left: none
+    
+.carousel-hero
+    height: 100%
+    width: 100%
+    padding: 10px 0
+    box-sizing: border-box
+    &__item
+        position: relative
+        background: rgb(var(--bg-primary))
+        height: 100%
+        width: 100%
+        & > img
+            height: 100%
+            width: auto
+            object-fit: cover
+            opacity: 0.75
