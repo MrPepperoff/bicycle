@@ -29,7 +29,7 @@ const products =[
         rating: 5,
         category: 2,
         carousel: {
-                today: false,
+                today: true,
                 week: false,
                 like: false,
                 new: false,
@@ -48,9 +48,9 @@ const products =[
         rating: 7,
         category: 1,
         carousel: {
-                today: false,
+                today: true,
                 week: false,
-                like: false,
+                like: true,
                 new: false,
                 top: false,
                 recommend: false,
@@ -66,8 +66,8 @@ const products =[
         tags: [],
         rating: 1,
         carousel: {
-                 today: false, 
-                 week: false,
+                 today: true,
+                 week: true,
                  like: false, 
                  new: false,
                  top: false,
@@ -84,9 +84,9 @@ const products =[
         tags: [],
         rating: 10,
         carousel: {
-                 today: false, 
+                 today: true, 
                  week: false,
-                 like: false, 
+                 like: true, 
                  new: false,
                  top: false,
                  recommend: false,
@@ -103,16 +103,31 @@ const products =[
         rating: 5,
         category: 2,
         carousel: {
-                today: false,
-                week: false,
-                like: false,
+                today: true,
+                week: true,
+                like: true,
                 new: false,
                 top: false,
                 recommend: false,
                }, 
     },
-
-
-
+    {
+        id: 6,
+        title: 'Trek 1120 (2022) Exmp',
+        images: ['bicycle-3_1.jpg','bicycle-3_2.jpg','bicycle-3_3.jpg'],
+        old_price: null,
+        price: 209200,
+        description: 'Дорожный велосипед класса туринг с оборудованием начального профессионального уровня Shimano, 12 скоростей. Технические особенности: алюминиевая рама Alpha Platinum Aluminum, жесткая карбоновая вилка 1120 HCM, двойные обода 1120 HCM, дисковые гидравлические тормоза Shimano MT4100 , задний и передний багажники. Подходит для туристического и прогулочного катания по различным дорогам и пересеченной местности. Диаметр колес - 28 дюймов. Вес - 14.08 кг.',
+        tags: [],
+        rating: 1,
+        carousel: {
+                 today: false,
+                 week: true,
+                 like: true, 
+                 new: false,
+                 top: false,
+                 recommend: false,
+               },
+    },
 ]
     

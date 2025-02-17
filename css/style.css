@@ -563,7 +563,8 @@ body {
 }
 .main__week__right {
   background: #a00;
-  padding: 0;
+  padding-bottom: 10px;
+  position: relative;
 }
 .main__week__right__wrap {
   background: #0a0;
@@ -905,4 +906,34 @@ body {
   bottom: 0;
   right: 0;
   z-index: 100;
+}
+
+.carousel {
+  height: 100%;
+}
+.carousel-indicators {
+  height: 15px;
+  bottom: 10px;
+}
+.carousel-indicators [data-bs-target] {
+  background: rgb(var(--c-white));
+  border-radius: 50%;
+  height: 100%;
+  width: 15px;
+  border-top: none;
+  border-bottom: none;
+  border: 2px solid rgb(var(--bg-primary));
+  box-sizing: border-box;
+}
+.carousel-like__list {
+  display: flex;
+}
+.carousel-like__item {
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  border-left: 1px solid #ccc;
+}
+.carousel-like__item:first-child {
+  border-left: none;
 }/*# sourceMappingURL=style.css.map */

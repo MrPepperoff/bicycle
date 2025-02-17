@@ -1,0 +1,115 @@
+.big-carousel {
+  height: 100%;
+}
+.big-carousel__left {
+  background: #a00;
+}
+.big-carousel__right {
+  border: 1px solid rgba(var(--bg-primary), 0.2);
+  position: relative;
+  padding-bottom: 40px;
+  height: 540px;
+}
+.big-carousel__item {
+  height: 100%;
+}
+.big-carousel__body {
+  width: 60%;
+}
+.big-carousel__mini-card {
+  border: none;
+  background: rgb(var(--c-white));
+  height: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.big-carousel__mini-card .mini-card__img {
+  width: 30%;
+}
+.big-carousel__mini-card .mini-card__img img {
+  width: 100%;
+}
+.big-carousel__mini-card .mini-card__title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.big-carousel__mini-card .mini-card__context {
+  background: #aaf;
+  width: 70%;
+  text-align: left;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0;
+}
+.big-carousel__mini-card .mini-card__price {
+  display: inline;
+}
+.big-carousel__mini-card .mini-card__price-old {
+  display: inline;
+}
+.big-carousel__card {
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: rgb(var(--c-white));
+}
+.big-carousel__card .card__img {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  padding: 10%;
+}
+.big-carousel__card .card__img-wrap {
+  width: 50%;
+  height: 100%;
+}
+.big-carousel__card .card__price {
+  display: inline;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+.big-carousel__card .card__price-old {
+  display: inline;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  opacity: 0.4;
+}
+.big-carousel__card .card__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.big-carousel__card .card__text {
+  margin-top: 2rem;
+}
+.big-carousel__button {
+  color: rgb(var(--bg-primary));
+  position: absolute;
+  font-weight: bold;
+  height: 30px;
+  width: 45%;
+  top: auto;
+  bottom: 10px;
+}
+.big-carousel__button.carousel-control-next {
+  right: 10px;
+}
+.big-carousel__button.carousel-control-prev {
+  left: 10px;
+}
+.big-carousel__button:hover {
+  opacity: 1;
+  color: rgb(var(--bg-primary));
+}
+.big-carousel__button:focus {
+  opacity: 1;
+  color: rgb(var(--bg-primary));
+}
+.big-carousel__icon {
+  font-size: 2rem;
+  padding: 0 1rem;
+}/*# sourceMappingURL=big-carousel.css.map */
