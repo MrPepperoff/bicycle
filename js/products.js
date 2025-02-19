@@ -30,7 +30,7 @@ const products =[
         category: 2,
         carousel: {
                 today: true,
-                week: false,
+                week: true,
                 like: false,
                 new: false,
                 top: false,
@@ -46,7 +46,7 @@ const products =[
         description: 'Велосипед, предназначенный для детей в возрасте от пяти до девяти лет с оборудованием начального любительского класса Shimano, 8 скоростей. Технические особенности: алюминиевая рама Alpha Silver Aluminum, жесткая вилка, двойные алюминиевые обода, надежные ободные тормоза Alloy linear-pull. Подходит для обучения и прогулочного катания в городских условиях. Диаметр колес - 20 дюймов. Вес - 8,89 кг.',
         tags: [],
         rating: 7,
-        category: 1,
+        category: 7,
         carousel: {
                 today: true,
                 week: false,
@@ -64,7 +64,7 @@ const products =[
         price: 209200,
         description: 'Дорожный велосипед класса туринг с оборудованием начального профессионального уровня Shimano, 12 скоростей. Технические особенности: алюминиевая рама Alpha Platinum Aluminum, жесткая карбоновая вилка 1120 HCM, двойные обода 1120 HCM, дисковые гидравлические тормоза Shimano MT4100 , задний и передний багажники. Подходит для туристического и прогулочного катания по различным дорогам и пересеченной местности. Диаметр колес - 28 дюймов. Вес - 14.08 кг.',
         tags: [],
-        rating: 1,
+        rating: 7,
         carousel: {
                  today: true,
                  week: true,
@@ -85,7 +85,7 @@ const products =[
         rating: 10,
         carousel: {
                  today: true, 
-                 week: false,
+                 week: true,
                  like: true, 
                  new: false,
                  top: false,
