@@ -1,9 +1,6 @@
 .big-carousel {
   height: 100%;
 }
-.big-carousel__left {
-  background: #a00;
-}
 .big-carousel__right {
   border: 1px solid rgba(var(--bg-primary), 0.2);
   position: relative;
@@ -36,7 +33,6 @@
   font-weight: 500;
 }
 .big-carousel__mini-card .mini-card__context {
-  background: #aaf;
   width: 70%;
   text-align: left;
   height: 100%;
