@@ -513,15 +513,33 @@ body
             &__wrap
                 background: #0a0
     &__banner-one
+        &__context
+            position: relative
+            z-index: 2
+            text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000, 0px 0px 100px #000
         &__wrap
             width: 100%
             position: relative
             overflow: hidden
-            &:hover > img
-                transform: scale(1.15) 
+            z-index: 0
+                
+            &::after
+                content: ''
+                position: absolute
+                inset: 0
+                background: #000
+                opacity: 0.1
+                transition: 1s ease
+                z-index: 1
+            &:hover 
+                & > img
+                    transform: scale(1.15) 
+                &::after
+                    opacity: 0
         &__item
             position: relative
             margin: 0 auto
+            
             &:first-child
                 & > div > div
                     width: 200px
@@ -821,9 +839,13 @@ body
     height: 5rem
     font-size: 2rem
     position: fixed
-    bottom: 0
-    right: 0
+    bottom: 0.1rem
+    right: 0.1rem
     z-index: 100
+    transition: 0.1s ease
+    opacity: 0.6
+    &:hover
+        opacity: 1
 
 .carousel
     height: 100%

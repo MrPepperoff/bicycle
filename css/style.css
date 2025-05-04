@@ -582,13 +582,31 @@ body {
 .main__week__right__wrap {
   background: #0a0;
 }
+.main__banner-one__context {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000, 0px 0px 100px #000;
+}
 .main__banner-one__wrap {
   width: 100%;
   position: relative;
   overflow: hidden;
+  z-index: 0;
+}
+.main__banner-one__wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.1;
+  transition: 1s ease;
+  z-index: 1;
 }
 .main__banner-one__wrap:hover > img {
   transform: scale(1.15);
+}
+.main__banner-one__wrap:hover::after {
+  opacity: 0;
 }
 .main__banner-one__item {
   position: relative;
@@ -950,9 +968,14 @@ body {
   height: 5rem;
   font-size: 2rem;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 0.1rem;
+  right: 0.1rem;
   z-index: 100;
+  transition: 0.1s ease;
+  opacity: 0.6;
+}
+.scroll-top:hover {
+  opacity: 1;
 }
 
 .carousel {
